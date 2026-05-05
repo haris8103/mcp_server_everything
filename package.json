@@ -27,13 +27,16 @@
     "start:streamableHttp": "node dist/index.js streamableHttp",
     "prettier:fix": "prettier --write .",
     "prettier:check": "prettier --check .",
-    "test": "vitest run --coverage"
+    "test": "vitest run --coverage",
+    "dev": "tsx index streamableHttp"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.26.0",
     "cors": "^2.8.5",
     "express": "^5.2.1",
     "jszip": "^3.10.1",
+    "tsc": "^2.0.4",
+    "yarn": "^1.22.22",
     "zod": "^3.25.0",
     "zod-to-json-schema": "^3.23.5"
   },
@@ -41,9 +44,9 @@
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@vitest/coverage-v8": "^2.1.8",
-    "shx": "^0.3.4",
-    "typescript": "^5.6.2",
     "prettier": "^2.8.8",
+    "shx": "^0.3.4",
+    "typescript": "^5.9.3",
     "vitest": "^2.1.8"
   }
 }
